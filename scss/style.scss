@@ -1,8 +1,12 @@
+@import './_varAndOthers';
+@import './menu';
+
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 body{
-  background: #2C2A2A;
+  background: $bgColor;
 }
