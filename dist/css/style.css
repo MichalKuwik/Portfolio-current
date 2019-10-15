@@ -2,8 +2,8 @@
   position: fixed;
   right: 0;
   height: 100vh;
-  width: 5vw;
-  background: #000; }
+  width: 7vw;
+  background: #0A0909; }
   .navigation .logo-div {
     width: 80%;
     height: 10%;
@@ -22,7 +22,22 @@
       list-style: none; }
       .navigation .menu-nav .nav-item .nav-link {
         color: #4D4D4E;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        transition: 0.5s ease-out; }
+        .navigation .menu-nav .nav-item .nav-link:hover {
+          color: #22EABA; }
+  .navigation .social-media {
+    margin-top: 6rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .navigation .social-media a {
+      color: #4D4D4E;
+      transition: 0.5s ease-out; }
+      .navigation .social-media a:hover {
+        color: #22EABA; }
 
 * {
   margin: 0;
@@ -30,4 +45,4 @@
   box-sizing: border-box; }
 
 body {
-  background: #100C0C; }
+  background: #000; }
