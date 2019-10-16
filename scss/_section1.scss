@@ -1,0 +1,35 @@
+@import './varAndOthers';
+
+.sec1{
+  min-height:50vh;
+  width:90vw;
+  position: absolute;
+  left:5%;
+  top:30%;
+
+  & .left{
+    width:50%;
+    // height: 50vh;
+   
+    & h1{
+      font-size:3.5rem;
+      color:#fff;
+    }
+    & h4{
+      color:$iconColor;
+      font-size:0.9rem;
+      margin-top:0.6rem;
+      margin-bottom: 3.5rem;
+    }
+    & a{
+      // display: block;
+      width:18%;
+      text-decoration: none;
+      color:$seaColor;
+      border:2px solid $seaColor;
+      text-transform: uppercase;
+      padding:5px 15px;
+      // margin-top:3rem;
+    }
+  }
+}

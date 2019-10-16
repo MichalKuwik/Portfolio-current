@@ -4,13 +4,13 @@
   position: fixed;
   right:0;
   height: 100vh;
-  width: 7vw;
+  width: 5vw;
   background: $blackColor;
 
   & .logo-div{
     width:80%;
-    height: 10%;
-    margin:auto;
+    height: 7%;
+    margin:1rem auto;
     
     & img{
       width:100%;
@@ -31,6 +31,9 @@
         color:$iconColor;
         font-size:1.5rem;
         @include fontTransition;
+        &.current{
+          color:$seaColor;
+        }
       
         &:hover{
           color:$seaColor;
