@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
 .navigation {
   position: fixed;
   right: 0;
@@ -42,6 +88,29 @@
       .navigation .social-media a:hover {
         color: #22EABA; }
 
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
 .sec1 {
   min-height: 50vh;
   width: 90vw;
@@ -49,22 +118,35 @@
   left: 5%;
   top: 30%; }
   .sec1 .left {
-    width: 50%; }
-    .sec1 .left h1 {
-      font-size: 3.5rem;
-      color: #fff; }
-    .sec1 .left h4 {
-      color: #4D4D4E;
-      font-size: 0.9rem;
-      margin-top: 0.6rem;
-      margin-bottom: 3.5rem; }
-    .sec1 .left a {
-      width: 18%;
-      text-decoration: none;
-      color: #22EABA;
-      border: 2px solid #22EABA;
-      text-transform: uppercase;
-      padding: 5px 15px; }
+    width: 60%; }
+    .sec1 .left .headerWrapper span {
+      color: white;
+      font-size: 4rem;
+      visibility: hidden;
+      display: inline-block;
+      font-weight: 600; }
+      .sec1 .left .headerWrapper span:hover {
+        animation: rubberBand 0.8s;
+        color: #22EABA;
+        cursor: pointer; }
+      .sec1 .left .headerWrapper span.sea {
+        color: #22EABA; }
+      .sec1 .left .headerWrapper span.dot {
+        width: 8px;
+        height: 8px;
+        background: #22EABA; }
+  .sec1 h4 {
+    color: #4D4D4E;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    margin-bottom: 3.5rem; }
+  .sec1 a {
+    width: 18%;
+    text-decoration: none;
+    color: #22EABA;
+    border: 2px solid #22EABA;
+    text-transform: uppercase;
+    padding: 5px 15px; }
 
 * {
   margin: 0;
