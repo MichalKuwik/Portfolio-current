@@ -1,15 +1,16 @@
 @import './varAndOthers';
 
 .sec1{
-  min-height:50vh;
+  height:90vh;
   width:90vw;
-  position: absolute;
+  position: relative;
   left:5%;
   top:30%;
 
   & .left{
     width:60%;
-    // height: 50vh;
+   position: absolute;
+   top:40%;
     & .headerWrapper{
       
       & span{
@@ -33,21 +34,70 @@
         }
       }
     }
+    & h4{
+      color:$iconColor;
+      font-size:0.9rem;
+      margin-top:0.6rem;
+      margin-bottom: 3.5rem;
+    }
+    & a{
+      // display: block;
+      width:18%;
+      text-decoration: none;
+      color:$seaColor;
+      border:2px solid $seaColor;
+      text-transform: uppercase;
+      padding:5px 15px;
+    }
   }
-  & h4{
-    color:$iconColor;
-    font-size:0.9rem;
-    margin-top:0.6rem;
-    margin-bottom: 3.5rem;
+  
+  figure{
+    position: absolute;
+    top:30%;
+    right:20%;
+    width:20vw;
+    height: 45vh;
+    transform: rotate(20deg);
+  
+    & svg{
+      width:100%;
+      height: 100%;
+      stroke-dasharray: 1620px;
+      stroke-dashoffset: 1620px;
+      animation: animSvg ease 2s forwards;
+    }
   }
-  & a{
-    // display: block;
-    width:18%;
-    text-decoration: none;
-    color:$seaColor;
-    border:2px solid $seaColor;
-    text-transform: uppercase;
-    padding:5px 15px;
-  }
+  .polygon1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40%;
+    top: 20%;
+    border-radius: 5px;
+    border: 5px solid #E5F812;
+    transform: rotate(-28.76deg);
+    }
+    .polygon2{
+      @extend .polygon1;
+      left:20%;
+      top:80%;
+      width:60px;
+      height: 60px;
+      border: 5px solid red;
+      transform: rotate(-58.76deg);
+    }
+    .polygon3{
+      @extend .polygon1;
+      left:20%;
+      top:10%;
+      width:30px;
+      height: 30px;
+      border: 4px solid $seaColor;
+      transform: rotate(-8.76deg);
+    }
 }
-
+// @keyframes animSvg{
+//   to{
+//     stroke-dashoffset:0;
+//   }
+// }
