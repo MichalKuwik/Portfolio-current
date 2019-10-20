@@ -112,7 +112,7 @@
     transform: scale3d(1, 1, 1); } }
 
 .sec1 {
-  height: 90vh;
+  height: 100vh;
   width: 90vw;
   position: relative;
   left: 5%;
@@ -186,9 +186,68 @@
     border: 4px solid #22EABA;
     transform: rotate(-8.76deg); }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .sec1 .left {
+    width: 90%; }
+    .sec1 .left .headerWrapper span {
+      color: white;
+      font-size: 2.5rem; }
+      .sec1 .left .headerWrapper span.dot {
+        width: 5px;
+        height: 5px; }
+    .sec1 .left h4 {
+      font-size: 0.8rem; } }
+
+@media screen and (max-width: 760px) {
+  .navigation {
+    display: none; }
+  .sec1 .left {
+    max-width: 90%;
+    min-width: 70%;
+    top: 20%; }
+    .sec1 .left a {
+      width: 60%; }
+    .sec1 .left .headerWrapper span {
+      color: white;
+      font-size: 3rem; }
+      .sec1 .left .headerWrapper span.dot {
+        width: 5px;
+        height: 5px; }
+    .sec1 .left h4 {
+      font-size: 0.8rem; }
+  .sec1 figure {
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    width: 40vw;
+    height: 70vh;
+    transform: rotate(20deg); }
+  .sec1 .polygon1, .sec1 .polygon2, .sec1 .polygon3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 80%;
+    top: 35%;
+    border-radius: 5px;
+    border: 4px solid #E5F812;
+    transform: rotate(-28.76deg); }
+  .sec1 .polygon2 {
+    left: 60%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid red;
+    transform: rotate(-58.76deg); }
+  .sec1 .polygon3 {
+    left: 80%;
+    top: 20%;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #22EABA;
+    transform: rotate(-8.76deg); } }
+
+@media screen and (min-width: 761px) and (max-width: 768px) {
   .sec1 {
-    height: 90vh;
     width: 90vw;
     position: relative;
     left: 5%;

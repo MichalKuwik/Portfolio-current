@@ -11,6 +11,7 @@ const pol3 = document.querySelector('.polygon3');
 const tl = new TimelineMax({delay:'1'});
 
 tl.set(elements,{visibility:"visible"});
+tl.set(em,{opacity:1})
 
 //node list can by array
 tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
@@ -43,8 +44,9 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   .to(elements[13],0.3,{color:'#22EABA'})
   .from(pol3,0.2,{opacity:0,rotation:135})
   .addLabel('michał.') //to top
-  .to(em,2,{strokeDashoffset:0})
+  .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
   .from(button,0.5,{opacity:0})
+  .to(em,1,{opacity:0.4})
   
 
