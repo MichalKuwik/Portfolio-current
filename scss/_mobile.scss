@@ -29,7 +29,7 @@
     }
   .sec1{
     & .left{
-      max-width:90%;
+      max-width:80%;
       min-width: 70%;
       top:20%;
       & a{
@@ -123,10 +123,74 @@
   .navigation{
   display: none;     
   }
+
+  .nav-mobile{
+    z-index: 9999;
+    height: 7vh;
+    background: lighten($color: $blackColor, $amount: 1);
+    padding:0.5rem;
+    
+    & .menu-wrapper{
+      & .logo-div{
+        width:10%;
+        height: 100%;
+        & img{
+          width:100%;
+          height: 100%;
+        }
+      }
+      & .menu-btn{
+      position: absolute;
+      z-index: 23;
+      right: 15px;
+      top:15px;
+      cursor: pointer;
+  
+      .btn-line{
+        width:28px;
+        height: 3px;;
+        margin: 0 0 5px 0;
+        background: #fff;
+        
+    }
+      }
+    }
+    
+    & .nav-div{
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      & .menu-nav{
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        width:100vw;
+        margin:auto;
+        justify-content: space-around;
+        align-items: center;
+       
+        & .nav-item{
+          list-style: none;
+    
+          & .nav-link{
+            color:$iconColor;
+            font-size:1.5rem;
+            
+            &.current{
+              color:$seaColor;
+            }
+          
+            &:hover{
+              color:$seaColor;
+            }
+          }
+        }
+      }
+    }
+  
 }
 @include mediaLg{
   .sec1{
-    
     figure{
       top:30%;
       right:10%;
@@ -134,4 +198,13 @@
       height: 55vh;
     }
   }
+  .nav-mobile{
+    display: none;
+  }
+}
+@include mediaXL{
+  .nav-mobile{
+    display: none;
+  }
+}
 }
