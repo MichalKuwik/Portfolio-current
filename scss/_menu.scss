@@ -62,14 +62,15 @@
 
 .nav-mobile{
   z-index: 9999;
-  height: 7vh;
+  height: 8vh;
   background: lighten($color: $blackColor, $amount: 1);
   padding:0.5rem;
+  overflow-x: hidden;
   
   & .menu-wrapper{
     & .logo-div{
-      width:15%;
-      height: 100%;
+      width:40px;
+      height: 40px;
       & img{
         width:100%;
         height: 100%;
@@ -79,23 +80,48 @@
     position: absolute;
     z-index: 23;
     right: 15px;
-    top:15px;
+    top:20px;
+    transition: 0.3s linear;
     cursor: pointer;
+    &.closeAll{
+      transform: rotate(180deg);
+    }
 
     .btn-line{
       width:28px;
       height: 3px;;
       margin: 0 0 5px 0;
       background: #fff;
-      
-  }
+    
+      &.close{
+        &.btn-line {
+            //line 1 - rotate
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            //line 2 - hide
+            &:nth-child(2){
+                opacity:0;
+            }
+            //line 3 - rotate
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+      }
+     }
     }
   }
   
   & .nav-div{
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
     width:100%;
+    right:-100%;
+    transition: 0.5s ease-in-out;
+
+    &.showMenu{
+      right:0;
+    }
     & .menu-nav{
       display: flex;
       flex-direction: row;

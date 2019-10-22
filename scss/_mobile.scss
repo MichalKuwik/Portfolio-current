@@ -28,10 +28,12 @@
     display: none;     
     }
   .sec1{
+    position: absolute;
+    top:20%;
     & .left{
       max-width:80%;
       min-width: 70%;
-      top:20%;
+      top:10%;
       & a{
         width:60%;
       }
@@ -52,7 +54,7 @@
     }
     figure{
       position: absolute;
-      top:45%;
+      top:30%;
       right:30%;
       width:40vw;
       height: 70vh;
@@ -63,14 +65,14 @@
       width: 30px;
       height: 30px;
       left: 80%;
-      top: 35%;
+      top: 25%;
       border-radius: 5px;
       border: 4px solid #E5F812;
       transform: rotate(-28.76deg);
       }
       .polygon2{
         left:60%;
-        top:50%;
+        top:40%;
         width:40px;
         height: 40px;
         border: 5px solid red;
@@ -78,26 +80,27 @@
       }
       .polygon3{
         left:80%;
-        top:20%;
+        top:10%;
         width:20px;
         height: 20px;
         border: 4px solid $seaColor;
         transform: rotate(-8.76deg);
       }
   }
+  
 }
 
 @include mediaMd{
   .sec1{
-    width:90vw;
-    position: relative;
+    max-width:90vw;
+    position: absolute;
     left:5%;
-    top:30%;
+    top:20%;
   
     & .left{
       width:60%;
      position: absolute;
-     top:40%;
+     top:20%;
       & .headerWrapper{
         
         & span{
@@ -117,6 +120,18 @@
       right:10%;
       height: 60vh;
       width:30vw;
+      top:10%;
+    }
+    .polygon1{
+      top:0;
+      left:70%;
+    }
+    .polygon2{
+      top:50%;
+      left:30%;
+    }
+    .polygon3{
+      left:10%;
     }
   }
   //navigation
@@ -124,69 +139,7 @@
   display: none;     
   }
 
-  .nav-mobile{
-    z-index: 9999;
-    height: 7vh;
-    background: lighten($color: $blackColor, $amount: 1);
-    padding:0.5rem;
-    
-    & .menu-wrapper{
-      & .logo-div{
-        width:10%;
-        height: 100%;
-        & img{
-          width:100%;
-          height: 100%;
-        }
-      }
-      & .menu-btn{
-      position: absolute;
-      z-index: 23;
-      right: 15px;
-      top:15px;
-      cursor: pointer;
-  
-      .btn-line{
-        width:28px;
-        height: 3px;;
-        margin: 0 0 5px 0;
-        background: #fff;
-        
-    }
-      }
-    }
-    
-    & .nav-div{
-      display: flex;
-      justify-content: space-between;
-      width:100%;
-      & .menu-nav{
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width:100vw;
-        margin:auto;
-        justify-content: space-around;
-        align-items: center;
-       
-        & .nav-item{
-          list-style: none;
-    
-          & .nav-link{
-            color:$iconColor;
-            font-size:1.5rem;
-            
-            &.current{
-              color:$seaColor;
-            }
-          
-            &:hover{
-              color:$seaColor;
-            }
-          }
-        }
-      }
-    }
+
   
 }
 @include mediaLg{
@@ -206,5 +159,4 @@
   .nav-mobile{
     display: none;
   }
-}
 }
