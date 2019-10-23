@@ -9,27 +9,27 @@ const pol3 = document.querySelector('.polygon3');
 const hamburgerBtn = document.querySelector('.menu-btn');
 const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
-
+const sec1 = document.querySelector('.sec1');
 
 //menu hamburger logic
 //set the flag
-// let menuIsActive = false;
+let menuIsActive = false;
 
-// hamburgerBtn.addEventListener('click',() => {
-//   if(!menuIsActive){
-//     hamburgerBtn.classList.add('closeAll');
-//     linesBurger.forEach(item => item.classList.add('close'));
-//     menu.classList.add('showMenu');
-//     menuIsActive = true;
-//   }
-//     else{
-//       hamburgerBtn.classList.remove('closeAll');
-//       linesBurger.forEach(item => item.classList.remove('close'));
-//       menu.classList.remove('showMenu');
-//       menuIsActive = false;
-//     }
-//   }
-// )
+hamburgerBtn.addEventListener('click',() => {
+  if(!menuIsActive){
+    hamburgerBtn.classList.add('closeAll');
+    linesBurger.forEach(item => item.classList.add('close'));
+    menu.classList.add('showMenu');
+    menuIsActive = true;
+  }
+    else{
+      hamburgerBtn.classList.remove('closeAll');
+      linesBurger.forEach(item => item.classList.remove('close'));
+      menu.classList.remove('showMenu');
+      menuIsActive = false;
+    }
+  }
+)
 
 //--------end of hamburger's logic----//
 
