@@ -10,6 +10,32 @@ const hamburgerBtn = document.querySelector('.menu-btn');
 const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const sec1 = document.querySelector('.sec1');
+const sec2 = document.querySelector('.sec2');
+const menuElements = document.querySelectorAll('.nav-link');
+
+const timeLine = new TimelineMax();
+
+menuElements.forEach((item,index) => {
+  if(index === 0 || index === 4){
+    item.addEventListener('click',() => {
+      timeLine.to(sec2,0.3,{scale:0.8})
+              .to(sec2,0.5,{left:'-100%'})
+              .to(sec1,0.5,{left:'5%',})
+              .to(sec1,0.3,{scale:1})
+              
+    })
+  }else if(index === 1 || index === 5){
+    
+    item.addEventListener('click',() => {
+      item.classList.add('current')
+      timeLine.to(sec1,0.3,{scale:0.8})
+              .to(sec1,0.5,{left:'-100%'})
+              .to(sec2,0.5,{left:'0',})
+              .to(sec2,0.3,{scale:1})
+    })
+  }
+  
+})
 
 //menu hamburger logic
 //set the flag

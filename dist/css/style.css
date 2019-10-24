@@ -50,7 +50,8 @@
   right: 0;
   height: 100vh;
   width: 5vw;
-  background: #0A0909; }
+  background: #0A0909;
+  z-index: 99999; }
   .navigation .logo-div {
     width: 80%;
     height: 7%;
@@ -357,12 +358,14 @@
     display: none; } }
 
 .sec2 {
-  position: relative;
-  top: 10%;
+  position: absolute;
+  top: 15%;
   left: -100%;
   width: 100vw;
-  height: 100vh;
-  background: darkblue; }
+  min-height: 90vh; }
+  .sec2 img {
+    width: 400px;
+    height: 400px; }
 
 * {
   margin: 0;
