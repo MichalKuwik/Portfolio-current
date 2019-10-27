@@ -393,10 +393,18 @@
     margin-top: 1rem; }
     .sec2 .content-wrapper .descrpition-wrapper {
       width: 40%; }
-      .sec2 .content-wrapper .descrpition-wrapper h2 {
-        color: #22EABA;
-        font-size: 3rem;
+      .sec2 .content-wrapper .descrpition-wrapper .wrapper-span {
         margin-bottom: 3rem; }
+        .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
+          color: #22EABA;
+          font-size: 3.5rem;
+          visibility: hidden;
+          display: inline-block;
+          font-weight: 600; }
+          .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span:hover {
+            animation: rubberBand 0.8s;
+            color: #22EABA;
+            cursor: pointer; }
       .sec2 .content-wrapper .descrpition-wrapper p {
         color: #fff;
         letter-spacing: 0px;

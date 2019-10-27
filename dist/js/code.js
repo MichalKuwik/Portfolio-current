@@ -13,6 +13,11 @@ const sec1 = document.querySelector('.sec1');
 const sec2 = document.querySelector('.sec2');
 const menuElements = document.querySelectorAll('.nav-link');
 
+//section2
+const aboutMeText = document.querySelectorAll('.desc-span');
+const aboutParagraph = document.getElementById('aboutParagraph');
+const portrait = document.getElementById('portrait');
+
 const timeLine = new TimelineMax();
 
 menuElements.forEach((item,index) => {
@@ -22,7 +27,7 @@ menuElements.forEach((item,index) => {
               .to(sec2,0.5,{left:'-100%'})
               .to(sec1,0.5,{left:'5%',})
               .to(sec1,0.3,{scale:1})
-              
+
     })
   }else if(index === 1 || index === 5){
     
@@ -32,6 +37,19 @@ menuElements.forEach((item,index) => {
               .to(sec1,0.5,{left:'-100%'})
               .to(sec2,0.5,{left:'0',})
               .to(sec2,0.3,{scale:1})
+
+      const timeLineAbout = new TimelineMax({delay:2});
+      timeLineAbout.set(elements,{visibility:"visible"});
+      timeLineAbout.from(aboutMeText[0],0.1,{scaleX:0})
+                   .from(aboutMeText[1],0.1,{scaleY:0})
+                   .from(aboutMeText[2],0.1,{scaleX:0})
+                   .from(aboutMeText[3],0.1,{scaleY:0})
+                   .from(aboutMeText[4],0.1,{scaleX:0})
+                   .from(aboutMeText[5],0.1,{scaleY:0})
+                   .from(aboutMeText[6],0.1,{scaleX:0})
+                   .from(aboutMeText[7],0.1,{scaleY:0})
+                   .from(aboutParagraph,0.5,{opacity:0,x:-10})
+                   .from(portrait,0.5,{opacity:0,x:10})
     })
   }
   
@@ -61,7 +79,8 @@ hamburgerBtn.addEventListener('click',() => {
 
 //TweenMax library
 
-//create new instance
+
+  //create new instance
 const tl = new TimelineMax({delay:'1'});
 //set primary value
 tl.set(elements,{visibility:"visible"});
@@ -103,5 +122,4 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   .from(text,0.5,{opacity:0})
   .from(button,0.5,{opacity:0})
   .to(em,1,{opacity:0.2})
-  
 

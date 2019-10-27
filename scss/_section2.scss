@@ -14,10 +14,21 @@
     margin-top:1rem;
     & .descrpition-wrapper{
       width:40%;
-      & h2{
-        color:$seaColor;
-        font-size:3rem;
+      & .wrapper-span{
         margin-bottom:3rem;
+        
+        & span{
+        color:$seaColor;
+        font-size:3.5rem;
+        visibility: hidden;
+        display: inline-block;
+        font-weight: 600;
+          &:hover{
+            animation: rubberBand 0.8s;
+            color:$seaColor;
+            cursor: pointer;
+          }
+        }
       }
       & p{
         color:#fff;
