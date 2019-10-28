@@ -415,6 +415,42 @@
       width: 35rem;
       height: 35rem; }
 
+@media screen and (min-width: 761px) and (max-width: 768px) {
+  .sec2 {
+    top: 25%; }
+    .sec2 .content-wrapper {
+      padding: 0 2rem; }
+      .sec2 .content-wrapper .descrpition-wrapper {
+        width: 100%; }
+        .sec2 .content-wrapper .descrpition-wrapper .wrapper-span {
+          margin-bottom: 1rem; }
+          .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
+            font-size: 2.8rem; }
+        .sec2 .content-wrapper .descrpition-wrapper p {
+          font-size: 0.8rem; }
+    .sec2 #portrait {
+      width: 25rem;
+      height: 25rem; } }
+
+@media screen and (max-width: 760px) {
+  .sec2 {
+    top: 16%; }
+    .sec2 .content-wrapper {
+      padding: 0 0.5rem;
+      flex-direction: column; }
+      .sec2 .content-wrapper .descrpition-wrapper {
+        width: 90%; }
+        .sec2 .content-wrapper .descrpition-wrapper .wrapper-span {
+          margin-bottom: 1rem; }
+          .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
+            font-size: 2.5rem; }
+        .sec2 .content-wrapper .descrpition-wrapper p {
+          font-size: 0.6rem; }
+    .sec2 #portrait {
+      margin-top: 2rem;
+      width: 15rem;
+      height: 15rem; } }
+
 * {
   margin: 0;
   padding: 0;
