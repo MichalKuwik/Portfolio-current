@@ -19,13 +19,16 @@ const aboutMeText = document.querySelectorAll('.desc-span');
 const aboutParagraph = document.querySelectorAll('.aboutParagraphSignleText')
 const portrait = document.getElementById('portrait');
 
+
+
 //instance for anim all sections
 const timeLine = new TimelineMax();
 
 menuElements.forEach((item,index) => {
   if(index === 0 || index === 4){
     item.addEventListener('click',() => {
-      timeLine.to(sec2,0.3,{scale:0.8})
+      
+     timeLine.to(sec2,0.3,{scale:0.8})
               .to(sec2,0.5,{left:'-100%'})
               .to(sec1,0.5,{left:'5%',})
               .to(sec1,0.3,{scale:1})
@@ -34,7 +37,7 @@ menuElements.forEach((item,index) => {
   }else if(index === 1 || index === 5){
     
     item.addEventListener('click',() => {
-      item.classList.add('current')
+      
       timeLine.to(sec1,0.3,{scale:0.8})
               .to(sec1,0.5,{left:'-100%'})
               .to(sec2,0.5,{left:'0',})
@@ -54,9 +57,35 @@ menuElements.forEach((item,index) => {
               .from(aboutParagraph[4],0.2,{opacity:0,y:-10})
               .from(aboutParagraph[5],0.2,{opacity:0,y:-10})
               .from(portrait,0.5,{opacity:0,y:-20})
+
     })
   }
+  
 })
+
+
+//btn section1
+button.addEventListener('click',() => {
+  timeLine.to(sec1,0.3,{scale:0.8})
+  .to(sec1,0.5,{left:'-100%'})
+  .to(sec2,0.5,{left:'0',})
+  .to(sec2,0.3,{scale:1})
+  .from(aboutMeText[0],0.1,{scaleX:0})
+  .from(aboutMeText[1],0.1,{scaleY:0})
+  .from(aboutMeText[2],0.1,{scaleX:0})
+  .from(aboutMeText[3],0.1,{scaleY:0})
+  .from(aboutMeText[4],0.1,{scaleX:0})
+  .from(aboutMeText[5],0.1,{scaleY:0})
+  .from(aboutMeText[6],0.1,{scaleX:0})
+  .from(aboutMeText[7],0.1,{scaleY:0})
+  .from(aboutParagraph[0],0.2,{opacity:0,y:-10})
+  .from(aboutParagraph[1],0.2,{opacity:0,y:-10})
+  .from(aboutParagraph[2],0.2,{opacity:0,y:-10})
+  .from(aboutParagraph[3],0.2,{opacity:0,y:-10})
+  .from(aboutParagraph[4],0.2,{opacity:0,y:-10})
+  .from(aboutParagraph[5],0.2,{opacity:0,y:-10})
+  .from(portrait,0.5,{opacity:0,y:-20})
+});
 
 //menu hamburger logic
 //set the flag
@@ -68,6 +97,7 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
+    timeLine.staggerFrom(menuElements,0.1,{opacity:0,delay:0.3},0.1)
   }
     else{
       hamburgerBtn.classList.remove('closeAll');

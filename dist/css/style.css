@@ -72,8 +72,6 @@
         color: #4D4D4E;
         font-size: 1.5rem;
         transition: 0.5s ease-out; }
-        .navigation .menu-nav .nav-item .nav-link.current {
-          color: #22EABA; }
         .navigation .menu-nav .nav-item .nav-link:hover {
           color: #22EABA; }
   .navigation .social-media {
@@ -114,7 +112,11 @@
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
-      background: #fff; }
+      background: #fff;
+      border-radius: 35px; }
+      .nav-mobile .menu-wrapper .menu-btn .btn-line:nth-child(2) {
+        width: 20px;
+        background: #22EABA; }
       .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px); }
       .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(2) {
@@ -208,7 +210,11 @@
       color: #22EABA;
       border: 2px solid #22EABA;
       text-transform: uppercase;
-      padding: 5px 15px; }
+      padding: 5px 15px;
+      transition: all 0.3s ease-in; }
+      .sec1 .left a:hover {
+        border: 2px solid #4D4D4E;
+        color: #4D4D4E; }
   .sec1 figure {
     position: absolute;
     top: 30%;

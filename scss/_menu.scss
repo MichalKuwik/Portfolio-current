@@ -32,9 +32,9 @@
         color:$iconColor;
         font-size:1.5rem;
         @include fontTransition;
-        &.current{
-          color:$seaColor;
-        }
+        // &.current{
+        //   color:$seaColor;
+        // }
       
         &:hover{
           color:$seaColor;
@@ -93,6 +93,11 @@
       height: 3px;;
       margin: 0 0 5px 0;
       background: #fff;
+      border-radius: 35px;
+      &:nth-child(2){
+        width:20px;
+        background: $seaColor;
+      }
     
       &.close{
         &.btn-line {

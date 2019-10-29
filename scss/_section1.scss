@@ -43,13 +43,18 @@
       margin-bottom: 3.5rem;
     }
     & a{
-      // display: block;
       width:18%;
       text-decoration: none;
       color:$seaColor;
       border:2px solid $seaColor;
       text-transform: uppercase;
       padding:5px 15px;
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        border:2px solid $iconColor;
+        color:$iconColor;
+      }
     }
   }
   
