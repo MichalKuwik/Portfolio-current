@@ -457,6 +457,51 @@
       width: 15rem;
       height: 15rem; } }
 
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+.sec3 {
+  position: absolute;
+  top: 15%;
+  left: -100%;
+  width: 100vw;
+  min-height: 90vh; }
+  .sec3 .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem; }
+    .sec3 .content-wrapper .descrpition-wrapper {
+      width: 50%; }
+      .sec3 .content-wrapper .descrpition-wrapper .wrapper-span {
+        margin-bottom: 3rem; }
+        .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span {
+          color: #22EABA;
+          font-size: 3.5rem;
+          visibility: hidden;
+          display: inline-block;
+          font-weight: 600; }
+
 * {
   margin: 0;
   padding: 0;

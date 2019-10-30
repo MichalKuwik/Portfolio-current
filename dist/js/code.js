@@ -19,10 +19,12 @@ const aboutMeText = document.querySelectorAll('.desc-span');
 const aboutParagraph = document.querySelectorAll('.aboutParagraphSignleText')
 const portrait = document.getElementById('portrait');
 
-
+//section3
+const sec3 = document.querySelector('.sec3');
 
 //instance for anim all sections
 const timeLine = new TimelineMax();
+const timeLine2 = new TimelineMax();
 
 menuElements.forEach((item,index) => {
   if(index === 0 || index === 4){
@@ -30,6 +32,8 @@ menuElements.forEach((item,index) => {
       
      timeLine.to(sec2,0.3,{scale:0.8})
               .to(sec2,0.5,{left:'-100%'})
+              .to(sec3,0.3,{scale:0.8})
+              .to(sec3,0.5,{left:'-100%'})
               .to(sec1,0.5,{left:'5%',})
               .to(sec1,0.3,{scale:1})
             
@@ -38,25 +42,26 @@ menuElements.forEach((item,index) => {
     
     item.addEventListener('click',() => {
       
-      timeLine.to(sec1,0.3,{scale:0.8})
+      timeLine2.to(sec1,0.3,{scale:0.8})
               .to(sec1,0.5,{left:'-100%'})
+              .to(sec3,0.3,{scale:0.8})
+              .to(sec3,0.5,{left:'-100%'})
               .to(sec2,0.5,{left:'0',})
               .to(sec2,0.3,{scale:1})
-              .from(aboutMeText[0],0.1,{scaleX:0})
-              .from(aboutMeText[1],0.1,{scaleY:0})
-              .from(aboutMeText[2],0.1,{scaleX:0})
-              .from(aboutMeText[3],0.1,{scaleY:0})
-              .from(aboutMeText[4],0.1,{scaleX:0})
-              .from(aboutMeText[5],0.1,{scaleY:0})
-              .from(aboutMeText[6],0.1,{scaleX:0})
-              .from(aboutMeText[7],0.1,{scaleY:0})
-              .from(aboutParagraph[0],0.2,{opacity:0,y:-10})
-              .from(aboutParagraph[1],0.2,{opacity:0,y:-10})
-              .from(aboutParagraph[2],0.2,{opacity:0,y:-10})
-              .from(aboutParagraph[3],0.2,{opacity:0,y:-10})
-              .from(aboutParagraph[4],0.2,{opacity:0,y:-10})
-              .from(aboutParagraph[5],0.2,{opacity:0,y:-10})
+              .staggerFrom(aboutMeText,0.1,{scaleX:0},0.1)
+              .staggerFrom(aboutParagraph,0.2,{opacity:0,y:-10},0.2)
               .from(portrait,0.5,{opacity:0,y:-20})
+
+    })
+  }else if(index === 2 || index === 6){
+    item.addEventListener('click',() => {
+      
+      // timeLine.to(sec2,0.3,{scale:0.8})
+      //         .to(sec2,0.3,{left:'-100%'})
+      //         .to(sec1,0.3,{scale:0.8})
+      //         .to(sec1,0.3,{left:'-100%'})
+      //         .to(sec3,0.5,{left:0})
+      //         .to(sec3,0.3,{scale:1})
 
     })
   }
@@ -70,20 +75,8 @@ button.addEventListener('click',() => {
   .to(sec1,0.5,{left:'-100%'})
   .to(sec2,0.5,{left:'0',})
   .to(sec2,0.3,{scale:1})
-  .from(aboutMeText[0],0.1,{scaleX:0})
-  .from(aboutMeText[1],0.1,{scaleY:0})
-  .from(aboutMeText[2],0.1,{scaleX:0})
-  .from(aboutMeText[3],0.1,{scaleY:0})
-  .from(aboutMeText[4],0.1,{scaleX:0})
-  .from(aboutMeText[5],0.1,{scaleY:0})
-  .from(aboutMeText[6],0.1,{scaleX:0})
-  .from(aboutMeText[7],0.1,{scaleY:0})
-  .from(aboutParagraph[0],0.2,{opacity:0,y:-10})
-  .from(aboutParagraph[1],0.2,{opacity:0,y:-10})
-  .from(aboutParagraph[2],0.2,{opacity:0,y:-10})
-  .from(aboutParagraph[3],0.2,{opacity:0,y:-10})
-  .from(aboutParagraph[4],0.2,{opacity:0,y:-10})
-  .from(aboutParagraph[5],0.2,{opacity:0,y:-10})
+  .staggerFrom(aboutMeText,0.1,{scaleX:0},0.1)
+  .staggerFrom(aboutParagraph,0.2,{opacity:0,y:-10},0.2)
   .from(portrait,0.5,{opacity:0,y:-20})
 });
 
@@ -97,7 +90,7 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
-    timeLine.staggerFrom(menuElements,0.1,{opacity:0,delay:0.3},0.1)
+    timeLine.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
   }
     else{
       hamburgerBtn.classList.remove('closeAll');

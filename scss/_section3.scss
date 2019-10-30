@@ -1,0 +1,29 @@
+@import './varAndOthers';
+
+.sec3{
+  position: absolute;
+  top:15%;
+  left:-100%;
+  width:100vw;
+  min-height: 90vh;
+  
+  & .content-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:1rem;
+    & .descrpition-wrapper{
+      width:50%;
+      & .wrapper-span{
+        margin-bottom:3rem;
+        & span{
+          color:$seaColor;
+          font-size:3.5rem;
+          visibility: hidden;
+          display: inline-block;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
