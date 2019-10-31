@@ -204,17 +204,6 @@
       font-size: 0.9rem;
       margin-top: 0.6rem;
       margin-bottom: 3.5rem; }
-    .sec1 .left a {
-      width: 18%;
-      text-decoration: none;
-      color: #22EABA;
-      border: 2px solid #22EABA;
-      text-transform: uppercase;
-      padding: 5px 15px;
-      transition: all 0.3s ease-in; }
-      .sec1 .left a:hover {
-        border: 2px solid #4D4D4E;
-        color: #4D4D4E; }
   .sec1 figure {
     position: absolute;
     top: 30%;

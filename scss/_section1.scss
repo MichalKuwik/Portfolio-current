@@ -42,20 +42,6 @@
       margin-top:0.6rem;
       margin-bottom: 3.5rem;
     }
-    & a{
-      width:18%;
-      text-decoration: none;
-      color:$seaColor;
-      border:2px solid $seaColor;
-      text-transform: uppercase;
-      padding:5px 15px;
-      transition: all 0.3s ease-in;
-
-      &:hover{
-        border:2px solid $iconColor;
-        color:$iconColor;
-      }
-    }
   }
   
   figure{

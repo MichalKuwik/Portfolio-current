@@ -3,7 +3,6 @@
 const sec1 = document.querySelector('.sec1');
 const elements = document.querySelectorAll('span')
 const text = document.querySelector('.proff');
-const button = document.querySelector('.btn');
 const em = document.getElementById('letterSvg');
 const pol1 = document.querySelector('.polygon1');
 const pol2 = document.querySelector('.polygon2');
@@ -36,6 +35,7 @@ menuElements.forEach((item,index) => {
               .to(sec3,0.5,{left:'-100%'})
               .to(sec1,0.5,{left:'5%',})
               .to(sec1,0.3,{scale:1})
+              
             
       })
   }else if(index === 1 || index === 5){
@@ -46,8 +46,8 @@ menuElements.forEach((item,index) => {
               .to(sec1,0.5,{left:'-100%'})
               .to(sec3,0.3,{scale:0.8})
               .to(sec3,0.5,{left:'-100%'})
-              .to(sec2,0.5,{left:'0',})
-              .to(sec2,0.3,{scale:1})
+              .to(sec2,0.1,{left:'0',})
+              .to(sec2,0.1,{scale:1})
               .staggerFrom(aboutMeText,0.1,{scaleX:0},0.1)
               .staggerFrom(aboutParagraph,0.2,{opacity:0,y:-10},0.2)
               .from(portrait,0.5,{opacity:0,y:-20})
@@ -56,29 +56,17 @@ menuElements.forEach((item,index) => {
   }else if(index === 2 || index === 6){
     item.addEventListener('click',() => {
       
-      // timeLine.to(sec2,0.3,{scale:0.8})
-      //         .to(sec2,0.3,{left:'-100%'})
-      //         .to(sec1,0.3,{scale:0.8})
-      //         .to(sec1,0.3,{left:'-100%'})
-      //         .to(sec3,0.5,{left:0})
-      //         .to(sec3,0.3,{scale:1})
+      timeLine.to(sec2,0.3,{scale:0.8})
+              .to(sec2,0.3,{left:'-100%'})
+              .to(sec1,0.3,{scale:0.8})
+              .to(sec1,0.3,{left:'-100%'})
+              .to(sec3,0.5,{left:0})
+              .to(sec3,0.3,{scale:1})
 
     })
   }
   
 })
-
-
-//btn section1
-button.addEventListener('click',() => {
-  timeLine.to(sec1,0.3,{scale:0.8})
-  .to(sec1,0.5,{left:'-100%'})
-  .to(sec2,0.5,{left:'0',})
-  .to(sec2,0.3,{scale:1})
-  .staggerFrom(aboutMeText,0.1,{scaleX:0},0.1)
-  .staggerFrom(aboutParagraph,0.2,{opacity:0,y:-10},0.2)
-  .from(portrait,0.5,{opacity:0,y:-20})
-});
 
 //menu hamburger logic
 //set the flag
