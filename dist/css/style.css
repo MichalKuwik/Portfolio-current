@@ -102,7 +102,7 @@
   .nav-mobile .menu-wrapper .menu-btn {
     position: absolute;
     z-index: 23;
-    right: 15px;
+    right: 45px;
     top: 20px;
     transition: 0.3s linear;
     cursor: pointer; }
@@ -412,7 +412,7 @@
 
 @media screen and (min-width: 761px) and (max-width: 768px) {
   .sec2 {
-    top: 25%; }
+    top: 30%; }
     .sec2 .content-wrapper {
       padding: 0 2rem; }
       .sec2 .content-wrapper .descrpition-wrapper {
@@ -429,7 +429,7 @@
 
 @media screen and (max-width: 760px) {
   .sec2 {
-    top: 16%; }
+    top: 20%; }
     .sec2 .content-wrapper {
       padding: 0 0.5rem;
       flex-direction: column; }
@@ -490,6 +490,14 @@
           visibility: hidden;
           display: inline-block;
           font-weight: 600; }
+      .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
+        display: flex; }
+        .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill {
+          width: 5rem;
+          height: 5rem; }
+          .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill img {
+            width: 100%;
+            height: 100%; }
 
 * {
   margin: 0;

@@ -24,6 +24,17 @@
           font-weight: 600;
         }
       }
+      & .skills-wrapper{
+        display: flex;
+        & .skill{
+          width:5rem;
+          height: 5rem;
+          & img{
+            width:100%;
+            height: 100%;
+          }
+        }
+      }
     }
   }
 }

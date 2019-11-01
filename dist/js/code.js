@@ -27,6 +27,7 @@ const timeLine2 = new TimelineMax();
 
 menuElements.forEach((item,index) => {
   if(index === 0 || index === 4){
+    
     item.addEventListener('click',() => {
       
      timeLine.to(sec2,0.3,{scale:0.8})
@@ -135,7 +136,6 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   .addLabel('michał.') //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
-  .from(button,0.5,{opacity:0})
   .to(em,1,{opacity:0.2})
 }
 animation(); 

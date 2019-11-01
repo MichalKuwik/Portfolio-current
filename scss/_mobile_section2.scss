@@ -1,6 +1,6 @@
 @include mediaMd{
   .sec2{
-    top:25%;
+    top:30%;
     & .content-wrapper{
         padding: 0 2rem;
       & .descrpition-wrapper{
@@ -25,7 +25,7 @@
 
 @include mediaSm{
   .sec2{
-    top:16%;
+    top:20%;
     & .content-wrapper{
         padding: 0 0.5rem;
         flex-direction: column;
