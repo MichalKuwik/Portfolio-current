@@ -497,7 +497,7 @@
       .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
         display: flex;
         height: 100%;
-        width: 75%;
+        width: 45%;
         flex-wrap: wrap;
         justify-content: center; }
         .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill {
@@ -506,6 +506,13 @@
           .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill img {
             width: 100%;
             height: 100%; }
+      .sec3 .content-wrapper .descrpition-wrapper .skills-desc {
+        margin-top: 4rem; }
+        .sec3 .content-wrapper .descrpition-wrapper .skills-desc .skills-paragraph {
+          color: #fff;
+          margin-bottom: 0.3rem; }
+          .sec3 .content-wrapper .descrpition-wrapper .skills-desc .skills-paragraph a {
+            color: #22EABA; }
 
 * {
   margin: 0;
