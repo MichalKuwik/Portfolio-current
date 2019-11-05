@@ -514,6 +514,43 @@
           .sec3 .content-wrapper .descrpition-wrapper .skills-desc .skills-paragraph a {
             color: #22EABA; }
 
+@media screen and (max-width: 760px) {
+  .sec3 .content-wrapper {
+    margin-top: 2rem; }
+    .sec3 .content-wrapper .descrpition-wrapper {
+      width: 100%; }
+      .sec3 .content-wrapper .descrpition-wrapper .wrapper-span {
+        width: 90%;
+        display: flex;
+        justify-content: center; }
+        .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span {
+          font-size: 2rem; }
+      .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
+        width: 90%; }
+        .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill {
+          width: 4.5em;
+          height: 4.5rem; }
+      .sec3 .content-wrapper .descrpition-wrapper .skills-desc {
+        width: 90%;
+        margin-top: 2rem; }
+        .sec3 .content-wrapper .descrpition-wrapper .skills-desc .skills-paragraph {
+          margin-top: 1rem; } }
+
+@media screen and (min-width: 761px) and (max-width: 768px) {
+  .sec3 .content-wrapper {
+    margin-top: 3rem; }
+    .sec3 .content-wrapper .descrpition-wrapper {
+      width: 90%; }
+      .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span {
+        font-size: 2.5rem; }
+      .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
+        width: 90%;
+        margin: 3rem 0; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
+    width: 60%; } }
+
 * {
   margin: 0;
   padding: 0;
