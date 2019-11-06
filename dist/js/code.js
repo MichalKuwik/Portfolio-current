@@ -20,6 +20,9 @@ const portrait = document.getElementById('portrait');
 
 //section3
 const sec3 = document.querySelector('.sec3');
+const sec3Letters = document.querySelectorAll('.span-skills');
+const sec3Skills = document.querySelectorAll('.skill');
+const sec3Paragraph = document.querySelectorAll('.skills-paragraph');
 
 //instance for anim all sections
 const timeLine = new TimelineMax();
@@ -43,6 +46,7 @@ menuElements.forEach((item,index) => {
     
     item.addEventListener('click',() => {
       
+      
       timeLine2.to(sec1,0.3,{scale:0.8})
               .to(sec1,0.5,{left:'-100%'})
               .to(sec3,0.3,{scale:0.8})
@@ -57,13 +61,15 @@ menuElements.forEach((item,index) => {
   }else if(index === 2 || index === 6){
     item.addEventListener('click',() => {
       
-      timeLine.to(sec2,0.3,{scale:0.8})
+      timeLine2.to(sec2,0.3,{scale:0.8})
               .to(sec2,0.3,{left:'-100%'})
               .to(sec1,0.3,{scale:0.8})
               .to(sec1,0.3,{left:'-100%'})
               .to(sec3,0.5,{left:0})
               .to(sec3,0.3,{scale:1})
-
+              .staggerFrom(sec3Letters,0.1,{scaleX:0},0.1)
+              .staggerFrom(sec3Skills,0.2,{scaleY:0},0.1)
+              .staggerFrom(sec3Paragraph,0.5,{opacity:0,y:-10},0.5)
     })
   }
   
