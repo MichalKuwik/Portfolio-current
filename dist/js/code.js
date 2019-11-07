@@ -12,68 +12,9 @@ const hamburgerBtn = document.querySelector('.menu-btn');
 const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const menuElements = document.querySelectorAll('.nav-link');
-//section2
-const sec2 = document.querySelector('.sec2');
-const aboutMeText = document.querySelectorAll('.desc-span');
-const aboutParagraph = document.querySelectorAll('.aboutParagraphSignleText')
-const portrait = document.getElementById('portrait');
-
-//section3
-const sec3 = document.querySelector('.sec3');
-const sec3Letters = document.querySelectorAll('.span-skills');
-const sec3Skills = document.querySelectorAll('.skill');
-const sec3Paragraph = document.querySelectorAll('.skills-paragraph');
 
 //instance for anim all sections
-const timeLine = new TimelineMax();
-const timeLine2 = new TimelineMax();
-
-menuElements.forEach((item,index) => {
-  if(index === 0 || index === 4){
-    
-    item.addEventListener('click',() => {
-      
-     timeLine.to(sec2,0.3,{scale:0.8})
-              .to(sec2,0.5,{left:'-100%'})
-              .to(sec3,0.3,{scale:0.8})
-              .to(sec3,0.5,{left:'-100%'})
-              .to(sec1,0.5,{left:'5%',})
-              .to(sec1,0.3,{scale:1})
-              
-            
-      })
-  }else if(index === 1 || index === 5){
-    
-    item.addEventListener('click',() => {
-      
-      
-      timeLine2.to(sec1,0.3,{scale:0.8})
-              .to(sec1,0.5,{left:'-100%'})
-              .to(sec3,0.3,{scale:0.8})
-              .to(sec3,0.5,{left:'-100%'})
-              .to(sec2,0.1,{left:'0',})
-              .to(sec2,0.1,{scale:1})
-              .staggerFrom(aboutMeText,0.1,{scaleX:0},0.1)
-              .staggerFrom(aboutParagraph,0.2,{opacity:0,y:-10},0.2)
-              .from(portrait,0.5,{opacity:0,y:-20})
-
-    })
-  }else if(index === 2 || index === 6){
-    item.addEventListener('click',() => {
-      
-      timeLine2.to(sec2,0.3,{scale:0.8})
-              .to(sec2,0.3,{left:'-100%'})
-              .to(sec1,0.3,{scale:0.8})
-              .to(sec1,0.3,{left:'-100%'})
-              .to(sec3,0.5,{left:0})
-              .to(sec3,0.3,{scale:1})
-              .staggerFrom(sec3Letters,0.1,{scaleX:0},0.1)
-              .staggerFrom(sec3Skills,0.2,{scaleY:0},0.1)
-              .staggerFrom(sec3Paragraph,0.5,{opacity:0,y:-10},0.5)
-    })
-  }
-  
-})
+const tl = new TimelineMax({delay:1});
 
 //menu hamburger logic
 //set the flag
@@ -85,7 +26,8 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
-    timeLine.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
+    tl.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
+    
   }
     else{
       hamburgerBtn.classList.remove('closeAll');
@@ -96,14 +38,8 @@ hamburgerBtn.addEventListener('click',() => {
   }
 )
 
-//--------end of hamburger's logic----//
-
-//TweenMax library
-
-
 const animation = () => {
-  //create new instance
-const tl = new TimelineMax({delay:1});
+
 //set primary value
 tl.set(elements,{visibility:"visible"});
 tl.set(em,{opacity:1})
@@ -142,6 +78,7 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   .addLabel('michał.') //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
-  .to(em,1,{opacity:0.2})
+  .from(em,1,{opacity:0.2})
 }
 animation(); 
+
