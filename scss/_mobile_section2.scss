@@ -25,20 +25,20 @@
 
 @include mediaSm{
   .sec2{
-    top:20%;
+    top:15%;
     & .content-wrapper{
         padding: 0 0.5rem;
         flex-direction: column;
       & .descrpition-wrapper{
         width:90%;
         & .wrapper-span{
-          margin-bottom:1rem;
+          margin-bottom:2rem;
           & span{
-            font-size:2.5rem;
+            font-size:3.2rem;
           }
         }
         & p{
-          font-size:0.6rem;
+          font-size:0.8rem;
         }
       }
     }

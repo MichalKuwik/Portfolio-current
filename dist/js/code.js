@@ -4,6 +4,7 @@ const sec1 = document.querySelector('.sec1');
 const elements = document.querySelectorAll('span')
 const text = document.querySelector('.proff');
 const em = document.getElementById('letterSvg');
+const link = document.getElementById('link');
 const pol1 = document.querySelector('.polygon1');
 const pol2 = document.querySelector('.polygon2');
 const pol3 = document.querySelector('.polygon3');
@@ -75,9 +76,11 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   .to(elements[19],0.6,{rotation:180,transformOrigin:"right"})
   .to(elements[13],0.3,{color:'#22EABA'})
   .from(pol3,0.2,{opacity:0,rotation:135})
-  .addLabel('michał.') //to top
+  .addLabel('michał.') 
+  //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
+  .from(link,0.5,{delay:0.5,opacity:0})
   .from(em,1,{opacity:0.2})
 }
 animation(); 

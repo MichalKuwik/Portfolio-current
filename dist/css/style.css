@@ -183,6 +183,12 @@
     width: 60%;
     position: absolute;
     top: 40%; }
+    .sec1 .left a {
+      color: #22EABA;
+      border: 1px solid #22EABA;
+      padding: 5px 10px;
+      text-decoration: none;
+      text-transform: lowercase; }
     .sec1 .left .headerWrapper span {
       color: white;
       font-size: 4rem;
@@ -203,7 +209,7 @@
       color: #4D4D4E;
       font-size: 0.9rem;
       margin-top: 0.6rem;
-      margin-bottom: 3.5rem; }
+      margin-bottom: 2.5rem; }
   .sec1 figure {
     position: absolute;
     top: 30%;
@@ -428,18 +434,18 @@
 
 @media screen and (max-width: 760px) {
   .sec2 {
-    top: 20%; }
+    top: 15%; }
     .sec2 .content-wrapper {
       padding: 0 0.5rem;
       flex-direction: column; }
       .sec2 .content-wrapper .descrpition-wrapper {
         width: 90%; }
         .sec2 .content-wrapper .descrpition-wrapper .wrapper-span {
-          margin-bottom: 1rem; }
+          margin-bottom: 2rem; }
           .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
-            font-size: 2.5rem; }
+            font-size: 3.2rem; }
         .sec2 .content-wrapper .descrpition-wrapper p {
-          font-size: 0.6rem; }
+          font-size: 0.8rem; }
     .sec2 #portrait {
       margin-top: 2rem;
       width: 15rem;
