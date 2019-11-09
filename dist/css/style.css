@@ -498,6 +498,10 @@
           font-size: 3.5rem;
           display: inline-block;
           font-weight: 600; }
+          .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span:hover {
+            animation: rubberBand 0.8s;
+            color: #22EABA;
+            cursor: pointer; }
       .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
         display: flex;
         height: 100%;
@@ -554,6 +558,29 @@
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
     width: 60%; } }
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
 
 * {
   margin: 0;

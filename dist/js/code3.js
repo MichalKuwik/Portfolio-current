@@ -17,6 +17,7 @@ const showSkills = () => {
    .staggerFrom(sec3Letters,0.2,{y:20,scaleY:0},0.1)
    .staggerFrom(sec3Skills,0.2,{scaleX:0,y:-100},0.1)
    .staggerFrom(sec3Paragraph,0.4,{opacity:0,y:-20},0.2)
+   .staggerTo(sec3Skills,0.2,{})
 }
 showSkills()
   
@@ -43,4 +44,9 @@ hamburgerBtn.addEventListener('click',() => {
 )  
 
 
+//   setTimeout(hello,2000);
+
+//   function hello(){
+//   window.location = '../../dist/index.html';
+// }
 

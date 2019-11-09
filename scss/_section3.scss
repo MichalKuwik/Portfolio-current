@@ -26,11 +26,11 @@
           font-size:3.5rem;
           display: inline-block;
           font-weight: 600;
-          // &:hover{
-          //   animation: rubberBand 0.8s;
-          //   color:$seaColor;
-          //   cursor: pointer;
-          // }
+          &:hover{
+            animation: rubberBand 0.8s;
+            color:$seaColor;
+            cursor: pointer;
+          }
         }
       }
       & .skills-wrapper{
