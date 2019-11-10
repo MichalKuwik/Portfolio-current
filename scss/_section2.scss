@@ -1,5 +1,6 @@
 @import './varAndOthers';
 
+
 .sec2{
   position: absolute;
   top:15%;
@@ -19,8 +20,9 @@
         
         & span{
         color:$seaColor;
-        font-size:3.5rem;
+        font-size:4.5rem;
         // visibility: hidden;
+        // font-family: 'Londrina Outline', cursive;
         display: inline-block;
         font-weight: 600;
           &:hover{

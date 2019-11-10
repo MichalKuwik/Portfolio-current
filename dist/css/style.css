@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap");
 @keyframes rubberBand {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -398,7 +399,7 @@
         margin-bottom: 3rem; }
         .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
           color: #22EABA;
-          font-size: 3.5rem;
+          font-size: 4.5rem;
           display: inline-block;
           font-weight: 600; }
           .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span:hover {
@@ -581,6 +582,22 @@
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
+.sec4 .sec4-wrapper .wrapper-span span {
+  color: #22EABA;
+  font-size: 3.5rem; }
+
+.sec4 .sec4-wrapper .projects-wrapper {
+  display: flex; }
+  .sec4 .sec4-wrapper .projects-wrapper .project {
+    width: 300px;
+    height: 200px; }
+    .sec4 .sec4-wrapper .projects-wrapper .project a {
+      width: 100%;
+      height: 100%; }
+      .sec4 .sec4-wrapper .projects-wrapper .project a img {
+        width: 100%;
+        height: 100%; }
 
 * {
   margin: 0;

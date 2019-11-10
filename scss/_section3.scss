@@ -1,5 +1,6 @@
 @import './varAndOthers';
 
+
 .sec3{
   position: absolute;
   top:15%;
@@ -26,6 +27,8 @@
           font-size:3.5rem;
           display: inline-block;
           font-weight: 600;
+          // font-family: 'Londrina Outline', cursive;
+
           &:hover{
             animation: rubberBand 0.8s;
             color:$seaColor;
