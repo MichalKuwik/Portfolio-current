@@ -400,6 +400,7 @@
         .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span {
           color: #22EABA;
           font-size: 4.5rem;
+          font-family: 'Londrina Outline', cursive;
           display: inline-block;
           font-weight: 600; }
           .sec2 .content-wrapper .descrpition-wrapper .wrapper-span span:hover {
@@ -498,7 +499,8 @@
           color: #22EABA;
           font-size: 3.5rem;
           display: inline-block;
-          font-weight: 600; }
+          font-weight: 600;
+          font-family: 'Londrina Outline', cursive; }
           .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span:hover {
             animation: rubberBand 0.8s;
             color: #22EABA;
@@ -583,21 +585,50 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.sec4 .sec4-wrapper .wrapper-span span {
-  color: #22EABA;
-  font-size: 3.5rem; }
-
-.sec4 .sec4-wrapper .projects-wrapper {
-  display: flex; }
-  .sec4 .sec4-wrapper .projects-wrapper .project {
-    width: 300px;
-    height: 200px; }
-    .sec4 .sec4-wrapper .projects-wrapper .project a {
-      width: 100%;
-      height: 100%; }
-      .sec4 .sec4-wrapper .projects-wrapper .project a img {
-        width: 100%;
-        height: 100%; }
+.sec4 {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  min-height: 100vh; }
+  .sec4 .sec4-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .sec4 .sec4-wrapper .wrapper-span {
+      text-align: center;
+      margin-bottom: 4rem; }
+      .sec4 .sec4-wrapper .wrapper-span span {
+        color: #22EABA;
+        font-size: 3.5rem;
+        font-family: 'Londrina Outline', cursive;
+        font-weight: 600; }
+    .sec4 .sec4-wrapper .projects-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 70%; }
+      .sec4 .sec4-wrapper .projects-wrapper .project {
+        width: 300px;
+        height: 200px; }
+        .sec4 .sec4-wrapper .projects-wrapper .project .overlay {
+          width: 100%;
+          height: 100%;
+          border: 2px solid #4D4D4E; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .overlay a {
+            width: 100%;
+            height: 100%; }
+            .sec4 .sec4-wrapper .projects-wrapper .project .overlay a img {
+              width: 100%;
+              height: 100%; }
+        .sec4 .sec4-wrapper .projects-wrapper .project .mini-wrapper {
+          display: flex;
+          margin-top: 1rem;
+          flex-wrap: wrap; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .mini-wrapper img {
+            width: 40px;
+            height: 40px; }
 
 * {
   margin: 0;
