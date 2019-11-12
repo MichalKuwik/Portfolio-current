@@ -33,20 +33,79 @@
       & .project{
         width:300px;
         height: 200px;
+        position: relative;
+        & .stain{
+          position: absolute;
+          width:100%;
+          height: 100%;
+          z-index:-9991;
+          top:50%;
+          & img{
+            width:100%;
+            height: 100%;
+          }
+        }
+        
+        & .repo-btn{
+          display: block;
+          text-decoration: none;
+          color:$seaColor;
+          border:1px solid $seaColor;
+          padding:5px 10px;
+          margin:1rem auto;
+          width:50%;
+          text-align: center;
+          @include fontTransition;
+          &:hover{
+            color:#000;
+            background: $seaColor;
+          }
+        }
         
         & .overlay{
           width:100%;
           height: 100%;
-          border:2px solid $iconColor;  
+          border:2px solid $iconColor;
+          position: relative;
+          &:hover i{
+            opacity:1;
+            @include fontTransition;
+          }
+          &:hover p {
+            opacity:1;
+            
+          }
+          & i{
+            color:$seaColor;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-size:3rem;
+            opacity:0;
+            
+          } 
+          & p{
+            position: absolute;
+            top:70%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:$seaColor;
+            opacity:0;
+            
+          } 
           
           & a{
             width:100%;
             height: 100%;
-          
+            
             & img{
               width:100%;
               height:100%;
               
+              &:hover{
+                opacity:0.2;
+              }
             }
           }
         }
@@ -54,6 +113,8 @@
           display: flex;
           margin-top:1rem;
           flex-wrap: wrap;
+          justify-content: center;
+          z-index: 9999;
 
           & img{
             width:40px;

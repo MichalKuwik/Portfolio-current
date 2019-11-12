@@ -72,7 +72,7 @@
       .navigation .menu-nav .nav-item .nav-link {
         color: #4D4D4E;
         font-size: 1.5rem;
-        transition: 0.5s ease-out; }
+        transition: all 0.5s linear; }
         .navigation .menu-nav .nav-item .nav-link:hover {
           color: #22EABA; }
   .navigation .social-media {
@@ -84,7 +84,7 @@
     align-items: center; }
     .navigation .social-media a {
       color: #4D4D4E;
-      transition: 0.5s ease-out; }
+      transition: all 0.5s linear; }
       .navigation .social-media a:hover {
         color: #22EABA; }
 
@@ -144,7 +144,7 @@
         .nav-mobile .nav-div .menu-nav .nav-item .nav-link {
           color: #4D4D4E;
           font-size: 1.5rem;
-          transition: 0.5s ease-out; }
+          transition: all 0.5s linear; }
           .nav-mobile .nav-div .menu-nav .nav-item .nav-link.current {
             color: #22EABA; }
           .nav-mobile .nav-div .menu-nav .nav-item .nav-link:hover {
@@ -611,21 +611,69 @@
       width: 70%; }
       .sec4 .sec4-wrapper .projects-wrapper .project {
         width: 300px;
-        height: 200px; }
+        height: 200px;
+        position: relative; }
+        .sec4 .sec4-wrapper .projects-wrapper .project .stain {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -9991;
+          top: 50%; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .stain img {
+            width: 100%;
+            height: 100%; }
+        .sec4 .sec4-wrapper .projects-wrapper .project .repo-btn {
+          display: block;
+          text-decoration: none;
+          color: #22EABA;
+          border: 1px solid #22EABA;
+          padding: 5px 10px;
+          margin: 1rem auto;
+          width: 50%;
+          text-align: center;
+          transition: all 0.5s linear; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .repo-btn:hover {
+            color: #000;
+            background: #22EABA; }
         .sec4 .sec4-wrapper .projects-wrapper .project .overlay {
           width: 100%;
           height: 100%;
-          border: 2px solid #4D4D4E; }
+          border: 2px solid #4D4D4E;
+          position: relative; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .overlay:hover i {
+            opacity: 1;
+            transition: all 0.5s linear; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .overlay:hover p {
+            opacity: 1; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .overlay i {
+            color: #22EABA;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            opacity: 0; }
+          .sec4 .sec4-wrapper .projects-wrapper .project .overlay p {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #22EABA;
+            opacity: 0; }
           .sec4 .sec4-wrapper .projects-wrapper .project .overlay a {
             width: 100%;
             height: 100%; }
             .sec4 .sec4-wrapper .projects-wrapper .project .overlay a img {
               width: 100%;
               height: 100%; }
+              .sec4 .sec4-wrapper .projects-wrapper .project .overlay a img:hover {
+                opacity: 0.2; }
         .sec4 .sec4-wrapper .projects-wrapper .project .mini-wrapper {
           display: flex;
           margin-top: 1rem;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          justify-content: center;
+          z-index: 9999; }
           .sec4 .sec4-wrapper .projects-wrapper .project .mini-wrapper img {
             width: 40px;
             height: 40px; }
