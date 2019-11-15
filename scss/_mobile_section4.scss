@@ -1,0 +1,62 @@
+@include mediaSm{
+  .sec4{
+  
+  & .sec4-wrapper{
+    
+    & .projects-wrapper{
+        min-height: 140vh;    
+      & .project{
+        height: 150px;
+        & .repo-btn{
+          width:70%;
+        }
+      }
+    }
+  }
+ }
+}
+@include mediaMd{
+  .sec4{
+  
+    & .sec4-wrapper{
+      
+      & .projects-wrapper{
+          // flex-wrap: wrap;
+          flex-direction: column;
+          min-height: 130vh;
+          align-items: center;
+           
+        & .project{
+          margin-bottom: 13rem;
+          height: 150px;
+          & .repo-btn{
+            width:70%;
+          }
+        }
+      }
+    }
+   }
+}
+
+@include mediaLg{
+  .sec4{
+  
+    & .sec4-wrapper{
+      
+      & .projects-wrapper{
+          // flex-wrap: wrap;
+          flex-direction: column;
+          min-height: 130vh;
+          align-items: center;
+           
+        & .project{
+          margin-bottom: 13rem;
+          height: 150px;
+          & .repo-btn{
+            width:70%;
+          }
+        }
+      }
+    }
+   }
+}
