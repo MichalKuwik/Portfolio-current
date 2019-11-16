@@ -4,7 +4,7 @@
   & .sec4-wrapper{
     
     & .projects-wrapper{
-        min-height: 140vh;    
+        min-height: 150vh;    
       & .project{
         height: 150px;
         & .repo-btn{
@@ -23,7 +23,7 @@
       & .projects-wrapper{
           // flex-wrap: wrap;
           flex-direction: column;
-          min-height: 130vh;
+          min-height: 140vh;
           align-items: center;
            
         & .project{

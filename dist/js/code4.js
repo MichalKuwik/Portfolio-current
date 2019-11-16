@@ -4,11 +4,21 @@ const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const menuElements = document.querySelectorAll('.nav-link');
 
-const tl4 = new TimelineMax();
-
 //section4
 const spanSkills = document.querySelectorAll('.span-skills');
+const skillsView = document.querySelector('.project');
 
+
+
+//AOS library instance
+AOS.init({
+  duration:1000,
+  once:true
+});
+
+//GSAP instance
+const tl4 = new TimelineMax();
+//animation for text elements
 tl4.staggerFrom(spanSkills,0.5,{opacity:0},0.1);
 
 //menu hamburger logic

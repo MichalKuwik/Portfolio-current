@@ -535,7 +535,7 @@
         display: flex;
         justify-content: center; }
         .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span {
-          font-size: 2rem; }
+          font-size: 3rem; }
       .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
         width: 90%; }
         .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill {
@@ -553,7 +553,7 @@
     .sec3 .content-wrapper .descrpition-wrapper {
       width: 90%; }
       .sec3 .content-wrapper .descrpition-wrapper .wrapper-span span {
-        font-size: 2.5rem; }
+        font-size: 3.5rem; }
       .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper {
         width: 90%;
         margin: 3rem 0; } }
@@ -587,7 +587,7 @@
 
 @media screen and (max-width: 760px) {
   .sec4 .sec4-wrapper .projects-wrapper {
-    min-height: 140vh; }
+    min-height: 150vh; }
     .sec4 .sec4-wrapper .projects-wrapper .project {
       height: 150px; }
       .sec4 .sec4-wrapper .projects-wrapper .project .repo-btn {
@@ -596,7 +596,7 @@
 @media screen and (min-width: 761px) and (max-width: 768px) {
   .sec4 .sec4-wrapper .projects-wrapper {
     flex-direction: column;
-    min-height: 130vh;
+    min-height: 140vh;
     align-items: center; }
     .sec4 .sec4-wrapper .projects-wrapper .project {
       margin-bottom: 13rem;
@@ -714,7 +714,7 @@
 
 @media screen and (max-width: 760px) {
   .sec4 .sec4-wrapper .projects-wrapper {
-    min-height: 140vh; }
+    min-height: 150vh; }
     .sec4 .sec4-wrapper .projects-wrapper .project {
       height: 150px; }
       .sec4 .sec4-wrapper .projects-wrapper .project .repo-btn {
@@ -723,7 +723,7 @@
 @media screen and (min-width: 761px) and (max-width: 768px) {
   .sec4 .sec4-wrapper .projects-wrapper {
     flex-direction: column;
-    min-height: 130vh;
+    min-height: 140vh;
     align-items: center; }
     .sec4 .sec4-wrapper .projects-wrapper .project {
       margin-bottom: 13rem;
