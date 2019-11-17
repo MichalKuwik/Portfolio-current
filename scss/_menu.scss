@@ -7,6 +7,7 @@
   width: 5vw;
   background: $blackColor;
   z-index:99999;
+  
 
   & .logo-div{
     width:80%;
@@ -25,6 +26,7 @@
     margin-top:5rem;
     justify-content: space-between;
     align-items: center;
+    
     & .nav-item{
       list-style: none;
 
@@ -62,13 +64,14 @@
 }
 
 .nav-mobile{
-  z-index: 9999;
+  z-index: -9999;
   height: 8vh;
   background: lighten($color: $blackColor, $amount: 1);
   padding:0.5rem;
-  overflow-x: hidden;
+  overflow: hidden;
   
   & .menu-wrapper{
+    z-index: 99999;
     & .logo-div{
       width:40px;
       height: 40px;
@@ -122,11 +125,13 @@
   & .nav-div{
     position: absolute;
     width:100%;
-    right:-100%;
+    top:0;
     transition: 0.5s ease-in-out;
+    z-index:-99991;
+    overflow: hidden;
 
     &.showMenu{
-      right:0;
+      top:8%;
     }
     & .menu-nav{
       display: flex;
@@ -136,6 +141,7 @@
       margin:auto;
       justify-content: space-around;
       align-items: center;
+     
      
       & .nav-item{
         list-style: none;

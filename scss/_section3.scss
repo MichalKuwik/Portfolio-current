@@ -46,6 +46,9 @@
         & .skill{
           width:5rem;
           height: 5rem;
+          &:hover{
+            animation: rubberBand 0.8s;
+          }
          
           & img{
             width:100%;
