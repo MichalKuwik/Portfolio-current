@@ -89,49 +89,52 @@
         color: #22EABA; }
 
 .nav-mobile {
-  z-index: 9999;
+  z-index: -9999;
   height: 8vh;
   background: #0d0b0b;
   padding: 0.5rem;
-  overflow-x: hidden; }
-  .nav-mobile .menu-wrapper .logo-div {
-    width: 40px;
-    height: 40px; }
-    .nav-mobile .menu-wrapper .logo-div img {
-      width: 100%;
-      height: 100%; }
-  .nav-mobile .menu-wrapper .menu-btn {
-    position: absolute;
-    z-index: 23;
-    right: 45px;
-    top: 20px;
-    transition: 0.3s linear;
-    cursor: pointer; }
-    .nav-mobile .menu-wrapper .menu-btn.closeAll {
-      transform: rotate(180deg); }
-    .nav-mobile .menu-wrapper .menu-btn .btn-line {
-      width: 28px;
-      height: 3px;
-      margin: 0 0 5px 0;
-      background: #fff;
-      border-radius: 35px; }
-      .nav-mobile .menu-wrapper .menu-btn .btn-line:nth-child(2) {
-        width: 20px;
-        background: #22EABA; }
-      .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px); }
-      .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(2) {
-        opacity: 0; }
-      .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px); }
+  overflow: hidden; }
+  .nav-mobile .menu-wrapper {
+    z-index: 99999; }
+    .nav-mobile .menu-wrapper .logo-div {
+      width: 40px;
+      height: 40px; }
+      .nav-mobile .menu-wrapper .logo-div img {
+        width: 100%;
+        height: 100%; }
+    .nav-mobile .menu-wrapper .menu-btn {
+      position: absolute;
+      z-index: 23;
+      right: 45px;
+      top: 20px;
+      transition: 0.3s linear;
+      cursor: pointer; }
+      .nav-mobile .menu-wrapper .menu-btn.closeAll {
+        transform: rotate(180deg); }
+      .nav-mobile .menu-wrapper .menu-btn .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #fff;
+        border-radius: 35px; }
+        .nav-mobile .menu-wrapper .menu-btn .btn-line:nth-child(2) {
+          width: 20px;
+          background: #22EABA; }
+        .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px); }
+        .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(2) {
+          opacity: 0; }
+        .nav-mobile .menu-wrapper .menu-btn .btn-line.close.btn-line:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px); }
   .nav-mobile .nav-div {
     position: absolute;
     width: 100%;
-    right: -100%;
+    top: 0;
     transition: 0.5s ease-in-out;
+    z-index: -99991;
     overflow: hidden; }
     .nav-mobile .nav-div.showMenu {
-      right: 0; }
+      top: 8%; }
     .nav-mobile .nav-div .menu-nav {
       display: flex;
       flex-direction: row;
@@ -386,9 +389,8 @@
 .sec2 {
   position: absolute;
   top: 15%;
-  left: -100%;
   width: 100vw;
-  min-height: 90vh; }
+  height: 80vh; }
   .sec2 .content-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -420,7 +422,8 @@
 
 @media screen and (min-width: 761px) and (max-width: 768px) {
   .sec2 {
-    top: 30%; }
+    top: 30%;
+    height: 50vh; }
     .sec2 .content-wrapper {
       padding: 0 2rem; }
       .sec2 .content-wrapper .descrpition-wrapper {
@@ -515,6 +518,8 @@
         .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill {
           width: 5rem;
           height: 5rem; }
+          .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill:hover {
+            animation: rubberBand 0.8s; }
           .sec3 .content-wrapper .descrpition-wrapper .skills-wrapper .skill img {
             width: 100%;
             height: 100%; }
@@ -751,4 +756,4 @@
 
 body {
   background: #000;
-  overflow: hidden; }
+  overflow-x: hidden; }
