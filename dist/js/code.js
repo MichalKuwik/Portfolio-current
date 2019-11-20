@@ -4,7 +4,7 @@ const sec1 = document.querySelector('.sec1');
 const elements = document.querySelectorAll('span')
 const text = document.querySelector('.proff');
 const em = document.getElementById('letterSvg');
-const link = document.getElementById('link');
+const infoBtn = document.getElementById('info-btn');
 const pol1 = document.querySelector('.polygon1');
 const pol2 = document.querySelector('.polygon2');
 const pol3 = document.querySelector('.polygon3');
@@ -13,6 +13,10 @@ const hamburgerBtn = document.querySelector('.menu-btn');
 const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const menuElements = document.querySelectorAll('.nav-link');
+
+//email element
+// const info_wrapper = document.querySelector('.info-wrapper');
+// const close_email_btn = document.getElementById('close-btn');
 
 //instance for anim all sections
 const tl = new TimelineMax({delay:1});
@@ -80,7 +84,7 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
-  .from(link,0.5,{delay:0.5,opacity:0})
+  // .from(link,0.5,{delay:0.5,opacity:0})
   .from(em,1,{opacity:0.2})
 }
 animation(); 
