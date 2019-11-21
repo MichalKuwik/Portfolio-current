@@ -109,6 +109,7 @@
       border:2px solid $iconColor;
       background: rgba(77,77,78,0.8);
       
+      
       & p{
         color:$iconColor;
         text-align: center;
@@ -132,6 +133,7 @@
         position: absolute;
         right:5%;
         top:5%;
+        // visibility: hidden;
         transition: all 0.5s ease-in;
         &:hover{
           background: $seaColor;
