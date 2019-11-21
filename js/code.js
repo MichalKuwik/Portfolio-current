@@ -4,7 +4,7 @@ const sec1 = document.querySelector('.sec1');
 const elements = document.querySelectorAll('span')
 const text = document.querySelector('.proff');
 const em = document.getElementById('letterSvg');
-const link = document.getElementById('link');
+const infoBtn = document.querySelector('.info-btn');
 const pol1 = document.querySelector('.polygon1');
 const pol2 = document.querySelector('.polygon2');
 const pol3 = document.querySelector('.polygon3');
@@ -14,9 +14,29 @@ const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const menuElements = document.querySelectorAll('.nav-link');
 
+//email element
+const info_wrapper = document.querySelector('.info-wrapper');
+const close_email_btn = document.getElementById('close-btn');
+const par_info = document.querySelectorAll('.par-info');
+// const icon = document.querySelector('.iconOwn');
+
 //instance for anim all sections
 const tl = new TimelineMax({delay:1});
+const tl2 = new TimelineMax();
 
+function btn_listener(){
+  info_wrapper.style.display = 'none';
+infoBtn.addEventListener('click', () => {
+  info_wrapper.style.display = 'block';
+  tl2.from(info_wrapper,0.4,{scaleY:0})
+     .staggerFrom(par_info,0.2,{y:-20,opacity:0},0.2)
+     .from(icon,0.4,{opacity:0,y:10})
+     .from(close_email_btn,0.4,{opacity:0})
+})
+close_email_btn.addEventListener('click',() => info_wrapper.style.display = 'none')
+
+}
+btn_listener()
 //menu hamburger logic
 //set the flag
 let menuIsActive = false;
@@ -80,7 +100,7 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
-  .from(link,0.5,{delay:0.5,opacity:0})
+  // .from(link,0.5,{delay:0.5,opacity:0})
   .from(em,1,{opacity:0.2})
 }
 animation(); 
