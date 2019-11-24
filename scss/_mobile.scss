@@ -19,6 +19,13 @@
         font-size:0.8rem;
       }
     }
+    .info-wrapper{
+      width:90%;
+      height: 30%;
+      & p{
+        margin-top:2rem;
+      }
+    }
   }
   .info-wrapper{
     width:90%;
@@ -97,7 +104,7 @@
       }
       .info-wrapper{
         width:90%;
-        height: 20%;
+        height: 30%;
         & p{
           margin-top:2rem;
         }

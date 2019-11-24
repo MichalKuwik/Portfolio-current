@@ -100,7 +100,7 @@ tl.from(elements[2],0.1,{scaleY:0,color:'#22EABA'})
   //to top
   .to(em,1.5,{strokeDashoffset:0})
   .from(text,0.5,{opacity:0})
-  // .from(link,0.5,{delay:0.5,opacity:0})
+  .from(infoBtn,0.5,{delay:0.5,opacity:0})
   .from(em,1,{opacity:0.2})
 }
 animation(); 
