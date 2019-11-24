@@ -323,6 +323,11 @@
         height: 5px; }
     .sec1 .left h4 {
       font-size: 0.8rem; }
+  .sec1 .info-wrapper {
+    width: 90%;
+    height: 30%; }
+    .sec1 .info-wrapper p {
+      margin-top: 2rem; }
   .info-wrapper {
     width: 90%;
     height: 20%; }
@@ -382,7 +387,7 @@
       transform: rotate(-8.76deg); }
     .sec1 .info-wrapper {
       width: 90%;
-      height: 20%; }
+      height: 30%; }
       .sec1 .info-wrapper p {
         margin-top: 2rem; } }
 
