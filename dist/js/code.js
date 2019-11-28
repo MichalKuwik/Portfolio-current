@@ -31,6 +31,7 @@ infoBtn.addEventListener('click', () => {
   tl2.from(info_wrapper,0.4,{scaleY:0})
      .staggerFrom(par_info,0.2,{y:-20,opacity:0},0.2)
      .from(icon,0.4,{opacity:0,y:10})
+     .set(close_email_btn,{visibility:"visible"})
      .from(close_email_btn,0.4,{opacity:0})
 })
 close_email_btn.addEventListener('click',() => info_wrapper.style.display = 'none')
@@ -47,8 +48,9 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
+    // set(menuElements,{visibility:"visible"})
     tl.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
-    
+    .set(menuElements,{visibility:"visible"})
   }
     else{
       hamburgerBtn.classList.remove('closeAll');

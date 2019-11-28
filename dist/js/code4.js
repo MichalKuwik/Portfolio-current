@@ -31,6 +31,7 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
+    tl4.set(menuElements,{visibility:"visible"})
     tl4.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
     
   }

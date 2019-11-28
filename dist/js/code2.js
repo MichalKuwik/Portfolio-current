@@ -9,6 +9,9 @@ const linesBurger = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.nav-div');
 const menuElements = document.querySelectorAll('.nav-link');
 
+const tl2 = new TimelineMax({delay:0.5});
+
+
 //menu hamburger logic
 //set the flag
 let menuIsActive = false;
@@ -19,7 +22,8 @@ hamburgerBtn.addEventListener('click',() => {
     linesBurger.forEach(item => item.classList.add('close'));
     menu.classList.add('showMenu');
     menuIsActive = true;
-    tl2.staggerFrom(menuElements,0.1,{opacity:0,delay:0.1},0.1)
+    tl2.set(menuElements,{visibility:"visible"})
+    tl2.staggerFrom(menuElements,0.1,{opacity:0},0.2)
     
   }
     else{
@@ -31,7 +35,9 @@ hamburgerBtn.addEventListener('click',() => {
   }
 )
 
-const tl2 = new TimelineMax({delay:0.2});
+
+tl2.set(aboutMeText,{visibility:"visible"});
+
 
 tl2.to(sec2,0.3,{left:0})
    .staggerFrom(aboutMeText,0.2,{scaleY:0},0.2)

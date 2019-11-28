@@ -145,10 +145,10 @@
      
       & .nav-item{
         list-style: none;
-  
         & .nav-link{
           color:$iconColor;
           font-size:1.5rem;
+          visibility: hidden;
           @include fontTransition;
           &.current{
             color:$seaColor;
