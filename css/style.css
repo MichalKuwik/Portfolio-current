@@ -897,7 +897,8 @@
       .sec4 .sec4-wrapper .projects-wrapper .project {
         width: 300px;
         height: 200px;
-        position: relative; }
+        position: relative;
+        margin-bottom: 15rem; }
         .sec4 .sec4-wrapper .projects-wrapper .project p {
           color: #fff;
           text-align: center;
