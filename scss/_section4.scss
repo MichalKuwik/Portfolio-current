@@ -29,11 +29,13 @@
       flex-wrap: wrap;
       justify-content: space-around;
       width:70%;
+      
   
       & .project{
         width:300px;
         height: 200px;
         position: relative;
+        margin-bottom:15rem;
         & p{
           color:#fff;
           text-align: center;
